@@ -1,23 +1,23 @@
-name: Push-to-EC2
+name: Upload Website
 
 on:
   push:
     branches:
-      - main
+    - main
 
 jobs:
   deploy:
-    name: Deploy to EC2 on master branch push
     runs-on: self-hosted
-
     steps:
-      - name: Checkout the files
-        uses: actions/checkout@v2
-      
-      - name: Deploy to Server 1
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.HOST_DNS }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: ${{ secrets.TARGET_DIR }}
+    - uses: actions/checkout@main
+    
+
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_BUCKET_NAME }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS }}
+    - run: |
+           aws s3 ls
+           ls
+           pwd
+           aws s3 cp index.html s3://productionbucket 

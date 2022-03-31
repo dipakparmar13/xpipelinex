@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
  
-    - run: |
+    - run: 
           #aws s3 ls
            ls
            pwd

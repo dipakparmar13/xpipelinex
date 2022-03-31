@@ -12,5 +12,6 @@ jobs:
     - uses: actions/checkout@main
     - run: |
       
-        - rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/dipak/
+        - touch index.html
+        - rsync -zhvr ./index.html ubuntu@52.90.58.254:/home/ubuntu/dipak/
         - echo "dipak new code"

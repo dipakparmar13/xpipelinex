@@ -13,4 +13,4 @@ jobs:
     - run: |
       
         - rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/dipak/
-        - echo "dipak"
+        - echo "dipak new code"

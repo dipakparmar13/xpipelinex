@@ -11,5 +11,5 @@ jobs:
       - name: dkd 
         run: | 
           echo "Ddd"
-          ssh -t ubuntu@52.90.58.254 "git pull 'https://github.com/dipakparmar13/xpipelinex.git'" 
+          ssh -t ubuntu@52.90.58.254 "cd xpipelinex; git pull 'https://github.com/dipakparmar13/xpipelinex.git'" 
 

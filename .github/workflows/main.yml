@@ -14,7 +14,7 @@ jobs:
     steps:
 
       - name: dkd 
-        run: |
+        run: | 
           echo "Ddd"
          
           rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/dipak/

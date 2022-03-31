@@ -16,5 +16,5 @@ jobs:
       - name: dkd
         run: |
           echo "Ddd"
-          ssh -t ubuntu@52.90.58.254 "mkdir test" 
-          - rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/dipak/
+         
+          rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/dipak/

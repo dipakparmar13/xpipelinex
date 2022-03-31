@@ -13,9 +13,9 @@ jobs:
  
     - run: 
           #aws s3 ls
-           ls
-           pwd
-           - echo "Compiling the code..."
-           - rsync -zhvr . ubuntu@552.90.58.254:/home/ubuntu/dipak/
+        ls
+        pwd
+        - echo "Compiling the code..."
+        - rsync -zhvr . ubuntu@552.90.58.254:/home/ubuntu/dipak/
           #aws s3 cp index.html s3://productionbranch
              

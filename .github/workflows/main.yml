@@ -11,8 +11,8 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-    - name: Demo
-    - uses: actions/checkout@main
-      run: |
-        - echo "ddfsds"
+      - name: Demo
+      - uses: actions/checkout@main
+        run: |
+          - echo "ddfsds"
       

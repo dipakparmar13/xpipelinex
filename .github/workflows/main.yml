@@ -11,5 +11,5 @@ jobs:
       - name: dkd 
         run: | 
           echo "Ddd"
-          ssh -t ubuntu@52.90.58.254 "git clone ''" 
-  #        rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/dipak/
+          ssh -t ubuntu@52.90.58.254 "git clone 'https://github.com/dipakparmar13/xpipelinex.git'" 
+

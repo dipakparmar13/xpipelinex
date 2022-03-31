@@ -13,5 +13,5 @@ jobs:
     - name: Demo
     - uses: actions/checkout@main
       run: |
-      - echo "file sync"
-      - echo "dipak new code"
+        - echo "ddfsds"
+      

@@ -1,20 +1,14 @@
 name: Upload Website
-
 on:
   push:
     branches:
-      - "main"
-    
-    
-
+      - "main"    
 jobs:
   deploy:
-
     runs-on: self-hosted
     steps:
 
       - name: dkd 
         run: | 
           echo "Ddd"
-         
           rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/dipak/

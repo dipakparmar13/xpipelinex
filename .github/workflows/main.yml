@@ -12,4 +12,4 @@ jobs:
     - uses: actions/checkout@main
     - run: |
         - ssh ubuntu@52.90.58.254
-        - rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/test/
+        - rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/dipak/

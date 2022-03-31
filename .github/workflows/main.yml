@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - run: |
-        - aws ec2 cp index.html ubuntu@52.90.58.254:/home/ubuntu/dipak/
+        - aws rsync . ubuntu@52.90.58.254:/home/ubuntu/dipak/
         - echo "file sync"
         - echo "dipak new code"

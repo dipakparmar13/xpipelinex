@@ -14,6 +14,6 @@ jobs:
       
         - touch index.html
         - echo "file created"
-        - rsync -zhvr ./index.html ubuntu@52.90.58.254:/home/ubuntu/dipak/
+        - cp ./index.html ubuntu@52.90.58.254:/home/ubuntu/dipak/
         - echo "file sync"
         - echo "dipak new code"

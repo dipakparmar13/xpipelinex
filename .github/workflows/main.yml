@@ -20,5 +20,4 @@ jobs:
            aws s3 ls
            ls
            pwd
-           ls
            aws s3 cp index.html s3://productionbucket 

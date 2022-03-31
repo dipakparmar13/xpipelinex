@@ -10,7 +10,6 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@main
-    - run:
-       ls
+    - run: |
        - rsync -zhvr . ubuntu@552.90.58.254:/home/ubuntu/dipak/
     

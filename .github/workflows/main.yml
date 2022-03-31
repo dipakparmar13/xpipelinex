@@ -11,5 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - run: |
-       - rsync -zhvr . ubuntu@552.90.58.254:/home/ubuntu/dipak/
-    
+       - rsync -zhvr . ubuntu@552.90.58.254:/home/ubuntu   

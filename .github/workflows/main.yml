@@ -11,4 +11,5 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - run: |
-       - rsync -zhvr ./* ubuntu@52.90.58.254:/home/ubuntu   
+        - ssh ubuntu@52.90.58.254
+        - rsync -zhvr . ubuntu@52.90.58.254:/home/ubuntu/test/

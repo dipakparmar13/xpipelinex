@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - run: |
-        - ssh -t ubuntu@52.90.58.254 "mkdir test"
+        # - ssh -t ubuntu@52.90.58.254 "mkdir test"
         - echo "file sync"
         - echo "dipak new code"
